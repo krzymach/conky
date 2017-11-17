@@ -26,8 +26,9 @@ conky.config = {
 
 	own_window = true,
 	own_window_type = 'dock',
-	own_window_transparent = true,
+	own_window_transparent = false,
 	own_window_argb_visual = true,
+	own_window_argb_value = 50,	
 	own_window_class = 'conky-semi',
 	own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager,below',
 
@@ -36,7 +37,7 @@ conky.config = {
 	
 
 
-	draw_shades = false,
+	draw_shades = true,
 	draw_outline = false,
 	draw_borders = false,
 	draw_graph_borders = false,
@@ -67,8 +68,8 @@ conky.config = {
 conky.text = [[
 ${font Ubuntu:size=11:style=bold}${color4}SYSTEM ${hr 2}
 ${offset 15}${font Ubuntu:size=11:style=normal}${color1}$sysname $kernel
-${offset 15}${font Ubuntu:size=11:style=normal}${color1}Graphics card:  ${execi 600 prime-select query}
-${offset 15}${font Ubuntu:size=11:style=normal}${color1}Uptime: $uptime
+${offset 15}${font Ubuntu:size=11:style=normal}${color1}Battery:  ${color3}${battery_bar 5,150 BAT1} ${color3}${battery_percent BAT1}%
+${offset 15}${font Ubuntu:size=11:style=normal}${color1}Uptime: ${color3}$uptime
 
 # Showing CPU Graph
 ${offset 160}${color1}${font Ubuntu:size=10:style=bold}CPU temp: ${alignr}${font Ubuntu:size=10:style=normal}${color2}${acpitemp} °C
