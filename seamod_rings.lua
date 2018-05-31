@@ -3,7 +3,7 @@
 --
 --  Date    : 05/02/2012
 --  Author  : SeaJey
---  Version : v0.2
+--  Version : v0.1
 --  License : Distributed under the terms of GNU GPL version 2 or later
 --
 --  This version is a modification of lunatico_rings.lua wich is modification of conky_orange.lua 
@@ -17,13 +17,13 @@ require 'cairo'
 gauge = {
 {
     name='cpu',                    arg='cpu1',                  max_value=100,
-    x=65,                          y=150,
+    x=75,                          y=170,
     graph_radius=54,
     graph_thickness=5,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=0,
     txt_weight=0,                  txt_size=9.0,
@@ -31,20 +31,20 @@ gauge = {
     graduation_radius=28,
     graduation_thickness=0,        graduation_mark_thickness=1,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='',
     caption_weight=1,              caption_size=9.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.4,
+    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
 },
 {
     name='cpu',                    arg='cpu2',                  max_value=100,
-    x=65,                          y=150,
+    x=75,                          y=170,
     graph_radius=48,
     graph_thickness=5,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=0,
     txt_weight=0,                  txt_size=9.0,
@@ -52,20 +52,20 @@ gauge = {
     graduation_radius=28,
     graduation_thickness=0,        graduation_mark_thickness=1,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='',
     caption_weight=1,              caption_size=9.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.4,
+    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
 },
 {
     name='cpu',                    arg='cpu3',                  max_value=100,
-    x=65,                          y=150,
+    x=75,                          y=170,
     graph_radius=42,
     graph_thickness=5,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=0,
     txt_weight=0,                  txt_size=9.0,
@@ -73,20 +73,20 @@ gauge = {
     graduation_radius=28,
     graduation_thickness=0,        graduation_mark_thickness=1,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='',
     caption_weight=1,              caption_size=9.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.4,
+    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
 },
 {
     name='cpu',                    arg='cpu4',                  max_value=100,
-    x=65,                          y=150,
+    x=75,                          y=170,
     graph_radius=36,
     graph_thickness=5,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=0,
     txt_weight=0,                  txt_size=9.0,
@@ -94,20 +94,20 @@ gauge = {
     graduation_radius=28,
     graduation_thickness=0,        graduation_mark_thickness=1,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='',
     caption_weight=1,              caption_size=9.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.4,
+    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
 },
 {
     name='memperc',                arg='',                      max_value=100,
-    x=65,                          y=325,
+    x=75,                          y=310,
     graph_radius=54,
     graph_thickness=10,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=42,
     txt_weight=0,                  txt_size=9.0,
@@ -118,17 +118,17 @@ gauge = {
     graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.5,
     caption='',
     caption_weight=1,              caption_size=10.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.4,
+    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
 },
 {
     name='fs_used_perc',           arg='/Dokumenty',                     max_value=100,
-    x=65,                          y=490,
+    x=75,                          y=455,
     graph_radius=54,
     graph_thickness=7,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=64,
     txt_weight=0,                  txt_size=9.0,
@@ -136,20 +136,20 @@ gauge = {
     graduation_radius=23,
     graduation_thickness=0,        graduation_mark_thickness=2,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='Dokumenty',
     caption_weight=1,              caption_size=12.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
     name='fs_used_perc',           arg='/Windows',                     max_value=100,
-    x=65,                          y=490,
+    x=75,                          y=455,
     graph_radius=42,
     graph_thickness=7,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=32,
     txt_weight=0,                  txt_size=9.0,
@@ -157,20 +157,20 @@ gauge = {
     graduation_radius=23,
     graduation_thickness=0,        graduation_mark_thickness=2,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='Windows',
     caption_weight=1,              caption_size=12.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
     name='fs_used_perc',           arg='/',                     max_value=100,
-    x=65,                          y=490,
+    x=75,                          y=455,
     graph_radius=30,
     graph_thickness=7,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=22,
     txt_weight=0,                  txt_size=9.0,
@@ -178,20 +178,20 @@ gauge = {
     graduation_radius=23,
     graduation_thickness=0,        graduation_mark_thickness=2,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='Root',
     caption_weight=1,              caption_size=12.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
     name='downspeedf',           arg='wlp8s0',                     max_value=100,
-    x=65,                          y=690,
+    x=75,                          y=640,
     graph_radius=54,
     graph_thickness=7,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=0,
     txt_radius=64,
     txt_weight=0,                  txt_size=9.0,
@@ -199,20 +199,20 @@ gauge = {
     graduation_radius=28,
     graduation_thickness=0,        graduation_mark_thickness=1,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='Down',
     caption_weight=1,              caption_size=12.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
     name='upspeedf',           arg='wlp8s0',                     max_value=100,
-    x=65,                          y=690,
+    x=75,                          y=640,
     graph_radius=42,
     graph_thickness=7,
     graph_start_angle=180,
     graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.2,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.4,
+    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
+    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=0,
     txt_radius=30,
     txt_weight=0,                  txt_size=9.0,
@@ -220,7 +220,7 @@ gauge = {
     graduation_radius=28,
     graduation_thickness=0,        graduation_mark_thickness=1,
     graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.4,
+    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
     caption='Up',
     caption_weight=1,              caption_size=12.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
@@ -299,7 +299,7 @@ function draw_gauge_ring(display, data, value)
             i = i + 1
         end
     end
-
+    
     -- text
     local txt_radius = data['txt_radius']
     local txt_weight, txt_size = data['txt_weight'], data['txt_size']
@@ -349,13 +349,46 @@ function go_gauge_rings(display)
     end
 end
 
+corner_r=20
+
+-- Set the colour and transparency (alpha) of your background.
+
+bg_colour=0x000000
+bg_alpha=0.4
+
+function rgb_to_r_g_b(colour,alpha)
+    return ((colour / 0x10000) % 0x100) / 255., ((colour / 0x100) % 0x100) / 255., (colour % 0x100) / 255., alpha
+end
+
+function conky_draw_bg()
+    if conky_window==nil then return end
+    local w=conky_window.width
+    local h=conky_window.height
+    local cs=cairo_xlib_surface_create(conky_window.display, conky_window.drawable, conky_window.visual, w, h)
+    cr=cairo_create(cs)
+    
+    cairo_move_to(cr,corner_r,0)
+    cairo_line_to(cr,w-corner_r,0)
+    cairo_curve_to(cr,w,0,w,0,w,corner_r)
+    cairo_line_to(cr,w,h-corner_r)
+    cairo_curve_to(cr,w,h,w,h,w-corner_r,h)
+    cairo_line_to(cr,corner_r,h)
+    cairo_curve_to(cr,0,h,0,h,0,h-corner_r)
+    cairo_line_to(cr,0,corner_r)
+    cairo_curve_to(cr,0,0,0,0,corner_r,0)
+    cairo_close_path(cr)
+    
+    cairo_set_source_rgba(cr,rgb_to_r_g_b(bg_colour,bg_alpha))
+    cairo_fill(cr)
+end
+
 -------------------------------------------------------------------------------
 --                                                                         MAIN
 function conky_main()
     if conky_window == nil then 
         return
     end
-
+    conky_draw_bg()
     local cs = cairo_xlib_surface_create(conky_window.display, conky_window.drawable, conky_window.visual, conky_window.width, conky_window.height)
     local display = cairo_create(cs)
     
