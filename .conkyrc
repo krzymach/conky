@@ -20,7 +20,7 @@ conky.config = {
 	text_buffer_size = 2048,
 	alignment = 'top_left',
 	gap_x = 30,
-	gap_y = 60,
+	gap_y = 45,
 	minimum_width = 350,
 	maximum_width = 350,
 
@@ -107,7 +107,7 @@ ${offset 200}${font Ubuntu:size=10:style=bold}${color1}Lan IP: ${alignr}$color3$
 ${offset 200}${font Ubuntu:size=10:style=bold}${color1}Ext IP: ${alignr}$color3${execi 600 wget -q -O /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1} 
 ${offset 190}${font Ubuntu:size=10:style=bold}${alignr}$color3${execi 600 wget -q -O /dev/stdout https://www.dnsleaktest.com/ | grep from | grep -o '<p>.*<img' | grep -o '>.*<' | grep -oEi '[a-zA-Z0-9 ,]+'}
 
-${voffset -60}
+${voffset -45}
 ${offset 90}${font Ubuntu:size=11:style=bold}${color5}INTERNET
 ${voffset 40}             
 ${offset 15}${color1}${font ubuntu:size=10:style=bold}Up:     ${font Ubuntu:size=10:style=normal}$color2${upspeed wlp8s0} / ${totalup wlp8s0}${goto 175}${color1}${font Ubuntu:size=10:style=bold}Down:     ${font Ubuntu:size=10:style=normal}$color2${downspeed wlp8s0} / ${totaldown wlp8s0}
