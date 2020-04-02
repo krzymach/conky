@@ -142,7 +142,7 @@ gauge = {
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
-    name='fs_used_perc',           arg='/Windows',                     max_value=100,
+    name='fs_used_perc',           arg='/',                     max_value=100,
     x=75,                          y=455,
     graph_radius=42,
     graph_thickness=7,
@@ -152,27 +152,6 @@ gauge = {
     graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
     hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
     txt_radius=32,
-    txt_weight=0,                  txt_size=9.0,
-    txt_fg_colour=0xEF5A29,        txt_fg_alpha=1.0,
-    graduation_radius=23,
-    graduation_thickness=0,        graduation_mark_thickness=2,
-    graduation_unit_angle=27,
-    graduation_fg_colour=0xFFFFFF, graduation_fg_alpha=0.3,
-    caption='Windows',
-    caption_weight=1,              caption_size=12.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
-},
-{
-    name='fs_used_perc',           arg='/',                     max_value=100,
-    x=75,                          y=455,
-    graph_radius=30,
-    graph_thickness=7,
-    graph_start_angle=180,
-    graph_unit_angle=2.7,          graph_unit_thickness=2.7,
-    graph_bg_colour=0xffffff,      graph_bg_alpha=0.3,
-    graph_fg_colour=0xFFFFFF,      graph_fg_alpha=0.6,
-    hand_fg_colour=0xEF5A29,       hand_fg_alpha=1.0,
-    txt_radius=22,
     txt_weight=0,                  txt_size=9.0,
     txt_fg_colour=0xEF5A29,        txt_fg_alpha=1.0,
     graduation_radius=23,
@@ -403,4 +382,3 @@ function conky_main()
     cairo_destroy(display)
 
 end
-
